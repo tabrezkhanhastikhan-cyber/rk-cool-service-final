@@ -346,36 +346,37 @@ http://www.templatemo.com/tm-509-hydro
                         <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
   
   <input type="hidden" name="access_key" value="38ea5cbf-fb46-443b-877b-dcc264b33b93">
-
   <input type="hidden" name="from_name" value="R.K Cool Service">
-  <input type="hidden" name="subject" value="New Customer Booking">
-  <input type="hidden" name="redirect" value="https://rk-cool-service.netlify.app//thankyou.html">
+  <input type="hidden" name="subject" value="New Service Request">
+  
+  <input type="hidden" name="redirect" value="thankyou.html">
 
-  <div class="col-md-6 col-sm-6">
-    <input type="text" name="Name" class="form-control" placeholder="Aapka Naam" required>
+  <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <input type="text" name="Name" class="form-control" placeholder="Aapka Naam" required style="margin-bottom: 15px;">
+    </div>
+    <div class="col-md-6 col-sm-6">
+      <input type="tel" name="Phone" class="form-control" placeholder="Mobile Number" required maxlength="10" style="margin-bottom: 15px;">
+    </div>
+    <div class="col-md-12 col-sm-12">
+      <select name="Service" class="form-control" required style="margin-bottom: 15px; height: 45px;">
+        <option value="">Select Service</option>
+        <option>AC Service</option>
+		<option>AC Installation</option>
+		<option>AC Gas Charging</option>
+		<option>AC Uninstallation</option>
+        <option>Fridge Repair</option>
+        <option>Washing Machine Repair</option>
+		<option>Refrigerator gas filling</option>
+		<option>AC Repair</option>
+		<option>Microwave Oven Repair</option>
+		<option>Others</option>
+      </select>
+    </div>
+    <div class="col-md-12 col-sm-12">
+      <button type="submit" class="form-control" style="background-color: #007bff; color: white; font-weight: bold; height: 50px;">Book Now</button>
+    </div>
   </div>
-
-  <div class="col-md-6 col-sm-6" style="margin-top: 10px;">
-    <input type="tel" name="Phone_Number" class="form-control" placeholder="Phone Number" required maxlength="10">
-  </div>
-
-  <div class="col-md-12 col-sm-12" style="margin-top: 10px;">
-    <select name="Service_Type" class="form-control" required>
-      <option value="">select service</option>
-      <option>AC Installation</option>
-      <option>AC Service</option>
-      <option>AC Repair</option>
-	  <option>Microwave Oven</option>
-      <option>Fridge Repair</option>
-      <option>Washing Machine Repair</option>
-      <option>Others</option>
-    </select>
-  </div>
-
-  <div class="col-md-12 col-sm-12" style="margin-top: 15px;">
-    <button type="submit" class="btn btn-primary w-100 py-3">Book Now</button>
-  </div>
-
 </form>
              <!--      </div>
 
